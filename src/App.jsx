@@ -8,6 +8,9 @@ import Section from './components/section/Section'
 import ListaPhones from './components/smartphones/ListaPhones';
 import Accesorios from './components/accesorios/Accesorios';
 import Servicios from './components/servicios/Servicios';
+import Registro from './components/sectionUser/RegistroUser';
+import Login from './components/sectionUser/Login';
+import Cuenta from './components/sectionUser/Cuenta';
 
 
 function App() {
@@ -23,6 +26,9 @@ function App() {
             <Route path='/smartphones' element={<ListaPhones />} />
             <Route path='/accesorios' element={<Accesorios/>}/>
             <Route path='/servicios' element={<Servicios/>}/>
+            <Route path='/registro' element={<Registro />} />
+            <Route path='/login' element={<Login />} />
+            <Route path='/cuenta' element={<Cuenta />} />
           </Routes>
         </main>
 
