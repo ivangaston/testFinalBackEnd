@@ -1,3 +1,5 @@
+import './styleUser.css' ;
+
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -13,7 +15,7 @@ function Login() {
 
     if (storedUser) {
       if (storedUser.email === email && storedUser.password === password) {
-        alert('Inicio de sesión exitoso');
+        alert('Inicio de sesion exitoso');
         navigate('/cuenta'); // Redirige a la página de cuenta
       } else {
         alert('Correo o contraseña incorrectos.');
@@ -24,7 +26,7 @@ function Login() {
   };
 
   return (
-    <div>
+    <div className='userStyle'>
       <h2>Login</h2>
       <form onSubmit={handleLogin}>
         <div>
@@ -45,7 +47,7 @@ function Login() {
             required
           />
         </div>
-        <button type="submit">Iniciar Sesión</button>
+        <button type="submit">Iniciar Sesion</button>
       </form>
     </div>
   );

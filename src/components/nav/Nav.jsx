@@ -22,7 +22,6 @@ function Nav() {
           <ul>
             <li><Link to="/registro">Registro</Link></li>
             <li><Link to="/login">Login</Link></li>
-            <li><Link to="/cuenta">Cuenta</Link></li>
           </ul>
         </li>
 

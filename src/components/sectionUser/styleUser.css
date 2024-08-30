@@ -1,0 +1,25 @@
+.userStyle{
+  padding: .5em;
+
+}
+.userStyle>h2{
+  margin-bottom: 1em;
+  font-size: 2em;
+}
+
+.userStyle>form>div{
+  padding: .5em;
+}
+
+.userStyle>form>div>input{
+margin-left: .2em;
+font-size: 1.2em;
+}
+
+.userStyle>form>button{
+  margin-top: 10em;
+}
+
+.userStyle>button {
+  margin-top: 10em;
+}

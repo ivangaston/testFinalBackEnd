@@ -1,3 +1,5 @@
+import './styleUser.css' ;
+
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -21,7 +23,7 @@ function Registro() {
   };
 
   return (
-    <div>
+    <div className='userStyle'>
       <h2>Registro</h2>
       <form onSubmit={handleRegister}>
         <div>

@@ -1,3 +1,5 @@
+import './styleUser.css';
+
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -17,12 +19,12 @@ function Cuenta() {
   };
 
   return (
-    <div>
+    <div className='userStyle'>
       {user ? (
         <>
           <h2>Bienvenido, {user.email}!</h2>
-          <p>Has iniciado sesión exitosamente.</p>
-          <button onClick={handleLogout}>Cerrar Sesión</button>
+          <p>Has iniciado sesion exitosamente.</p>
+          <button onClick={handleLogout}>Cerrar Sesion</button>
         </>
       ) : (
         <p>Redirigiendo...</p>
