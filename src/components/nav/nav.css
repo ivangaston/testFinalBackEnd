@@ -1,0 +1,63 @@
+/*NAV*/
+nav {
+  background: linear-gradient(90deg, rgb(255, 116, 29) 30%, rgb(255, 134, 58) 40%, rgb(255, 178, 130) 70%, rgb(255, 224, 194) 100%);
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  position: relative;
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+nav>ul>li:hover {
+  text-decoration: underline;
+}
+
+/* Estilo submenus */
+nav ul ul {
+  display: none;
+  /* Oculta los submenus por defecto */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(163, 163, 163, 0.927);
+  padding: 0;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+nav ul ul li {
+  display: block;
+}
+
+nav ul li:hover>ul {
+  display: block;
+}
+
+/* Estilo adicional para submenu */
+nav ul ul li a {
+  padding: 15px 25px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+nav ul ul li a:hover {
+  background-color: rgb(255, 116, 29);
+  border-top: solid black 2px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}

@@ -1,0 +1,28 @@
+.section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sectionOne {
+  max-width: 400px;
+  text-align: center;
+  background-color: rgba(41, 168, 157, 0.954);
+  margin: .5em;
+  border-radius: 5px;
+
+  p {
+    padding: .2em;
+  }
+}
+
+.sectionOne>img {
+  width: 80%;
+  margin: 1em;
+  border-radius: 5px;
+}
+
+.sectionTwo {
+  width: 100%;
+  margin: 1em;
+}
